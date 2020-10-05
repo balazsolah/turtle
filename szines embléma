@@ -1,0 +1,17 @@
+import turtle 
+import random
+
+window = turtle.Screen()        
+alex = turtle.Turtle() 
+
+def rajz(szogek_szama, szin):
+    
+     hossz=50
+     alex.color(szin)
+     for i in range (szogek_szama):
+         alex.forward(hossz)      
+         alex.left(360/szogek_szama)
+for i in range (4,12):
+    szinek = ('red','green','blue','purple')
+    rajz(i,random.choice(szinek))
+    
